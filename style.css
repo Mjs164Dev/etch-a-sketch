@@ -4,6 +4,12 @@
     justify-content:center;
 }
 
+.grid-row-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .grid-element-style {
     width: 20px;
     height: 20px;
