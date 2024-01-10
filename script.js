@@ -15,14 +15,6 @@ function createGrid(columns) {
         // Add event listener to each gridElement
         gridElement.addEventListener("mouseenter", (e) => {
             gridElement.style.backgroundColor = '#002A4A';
-            // ... other actions for mouseenter event ...
-        });
-
-        // If needed, add mouseleave event to reset the style
-        gridElement.addEventListener("mouseleave", (e) => {
-            //gridElement.style.transitionDelay = '100ms';
-            gridElement.style.backgroundColor = '#00A1E2';
-            // ... other actions for mouseleave event ...
         });
     }
 
