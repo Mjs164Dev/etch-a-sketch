@@ -1,5 +1,17 @@
 const gridContainer = document.querySelector('#gridContainer');
-let rows = prompt('how many rows?');
+//let rows = prompt('how many rows?');
+
+const sideBtn = document.querySelector('#sideLengthBtn');
+let rows = 0;
+
+sideBtn.addEventListener('click',function() {
+    rows = prompt('How many rows?');
+    
+    for (let i = 0; i < rows; i++) {
+        createGrid(rows);
+    }
+
+});
 
 function createGrid(columns) {
     const gridRow = document.createElement('div');
@@ -17,12 +29,4 @@ function createGrid(columns) {
             gridElement.style.backgroundColor = '#002A4A';
         });
     }
-
-}
-
-
-
-//loop through createGridElement function to create blocks in each row
-for (let i = 0; i < rows; i++) {
-    createGrid(rows);
 }
