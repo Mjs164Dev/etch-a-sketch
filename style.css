@@ -1,4 +1,6 @@
 .grid-container-style {
+    height: 960px;
+    width: 960px;
     display: flex;
     flex-direction: row;
     justify-content:center;

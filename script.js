@@ -1,5 +1,4 @@
 const gridContainer = document.querySelector('#gridContainer');
-//let rows = prompt('how many rows?');
 
 const sideBtn = document.querySelector('#sideLengthBtn');
 let rows = 0;
@@ -7,11 +6,15 @@ let rows = 0;
 sideBtn.addEventListener('click',function() {
     rows = prompt('How many rows?');
     
+    while (rows >= 100) {
+        rows = prompt('Please enter a number less than 100.')
+    }
+    
     for (let i = 0; i < rows; i++) {
         createGrid(rows);
     }
 
-});
+    });
 
 function createGrid(columns) {
     const gridRow = document.createElement('div');
