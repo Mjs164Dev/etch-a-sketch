@@ -1,9 +1,10 @@
 .grid-container-style {
-    height: 960px;
-    width: 960px;
+    height: 500px;
+    width: 500px;
     display: flex;
     flex-direction: row;
     justify-content:center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow */
 }
 
 .grid-row-style {
@@ -16,5 +17,5 @@
     width: 20px;
     height: 20px;
     background-color: #00A1e2;
-    margin: 2px;
+    margin: 1px;
 }
