@@ -2,10 +2,6 @@ const gridContainer = document.querySelector('#gridContainer');
 const sideBtn = document.querySelector('#sideLengthBtn');
 let rows = 0;
 
-
-
-
-
 sideBtn.addEventListener('click',function() {
     const topLevelDivs = gridContainer.children;
 
